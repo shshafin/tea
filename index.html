@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwind & daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- tailwind customize -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'main-color': '#1C1C1C',
+                        'p-color': '#777',
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<style>
+    .font-manrope {
+        font-family: 'Manrope', sans-serif;
+    }
+</style>
+
+
+<body class="font-manrope">
+
+    <!-- banner start -->
+    <header class="my-9">
+        <section>
+            <div class="hero">
+                <div class="hero-content flex-col lg:gap-24 lg:flex-row">
+
+                    <div>
+                        <h1 class="text-7xl font-extrabold text-main-color leading">
+                            It's good <br>
+                            tea time at The <br>
+                            Tea House</h1>
+                        <p class="py-6 text-p-color">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction
+                            To Your Taste Buds.</p>
+                        <button class="btn bg-linear  bg-gradient-to-r from-amber-500 to-red-500 text-white text-base">Explore More
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 19.7788L19.5 4.77881M19.5 4.77881H8.25M19.5 4.77881V16.0288"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+
+                    <div>
+                        <img src="images/banner.png" class="w-auto h-72 lg:h-96 ml-4" />
+
+                        <!-- rating start -->
+                        <div
+                            class="flex items-center gap-3 drop-shadow-lg rounded-lg bg-white p-2 lg:p-4 w-48 lg:w-60 -mt-16 lg:-mt-24 ml-8">
+
+                            <svg width="48" height="46" viewBox="0 0 48 46" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M42.4416 13.778L29.9033 12.6152L24.9228 1.04987C24.574 0.240051 23.4259 0.240051 23.0772 1.04987L18.0966 12.6151L5.5584 13.778C4.68043 13.8594 4.32568 14.9514 4.98802 15.5333L14.4482 23.8439L11.6796 36.1279C11.4858 36.988 12.4147 37.6629 13.1728 37.2128L24 30.7838L34.8272 37.2128C35.5854 37.663 36.5141 36.988 36.3204 36.1279L33.5517 23.8439L43.012 15.5333C43.6743 14.9514 43.3195 13.8594 42.4416 13.778Z"
+                                    fill="#FFDC64" />
+                                <path
+                                    d="M11.1823 0.651717C11.8215 1.53953 13.6256 5.35235 14.6571 7.57442C14.8193 7.92373 14.381 8.23929 14.1011 7.97463C12.3211 6.29163 9.2775 3.37113 8.63831 2.48322C8.13253 1.78075 8.292 0.801249 8.99456 0.295467C9.69703 -0.210315 10.6765 -0.0507523 11.1823 0.651717Z"
+                                    fill="#FFF082" />
+                                <path
+                                    d="M36.8177 0.651717C36.1785 1.53953 34.3744 5.35235 33.343 7.57442C33.1808 7.92373 33.6191 8.23929 33.8989 7.97463C35.6789 6.29163 38.7224 3.37103 39.3617 2.48322C39.8675 1.78075 39.708 0.801249 39.0055 0.295467C38.303 -0.210315 37.3235 -0.0507523 36.8177 0.651717Z"
+                                    fill="#FFF082" />
+                                <path
+                                    d="M46.9183 26.6867C45.8782 26.3475 41.6974 25.7871 39.2671 25.4796C38.8851 25.4313 38.7177 25.9447 39.0547 26.1309C41.199 27.3155 44.9062 29.3277 45.9463 29.6669C46.7692 29.9353 47.6539 29.4858 47.9223 28.6627C48.1907 27.8397 47.7412 26.9551 46.9183 26.6867Z"
+                                    fill="#FFF082" />
+                                <path
+                                    d="M1.08176 26.6867C2.12182 26.3475 6.30261 25.7871 8.73289 25.4796C9.11492 25.4313 9.28236 25.9447 8.94533 26.1309C6.80098 27.3155 3.09382 29.3277 2.05376 29.6669C1.23082 29.9353 0.346098 29.4858 0.0776916 28.6627C-0.190715 27.8397 0.258817 26.9551 1.08176 26.6867Z"
+                                    fill="#FFF082" />
+                                <path
+                                    d="M22.4807 44.3756C22.4807 43.2816 23.2443 39.1332 23.7055 36.7272C23.778 36.3491 24.3181 36.3491 24.3906 36.7272C24.8518 39.1332 25.6154 43.2816 25.6154 44.3756C25.6154 45.2412 24.9137 45.9429 24.0481 45.9429C23.1824 45.943 22.4807 45.2412 22.4807 44.3756Z"
+                                    fill="#FFF082" />
+                                <path
+                                    d="M26.7338 5.2555L24.9227 1.04987C24.5739 0.240051 23.4258 0.240051 23.0771 1.04987L18.0965 12.6151L5.5584 13.778C4.68043 13.8594 4.32568 14.9514 4.98802 15.5333L14.4482 23.8439L11.6796 36.1279C11.4858 36.988 12.4147 37.6629 13.1728 37.2128L14.6138 36.3571C16.9762 21.0646 23.6177 9.83875 26.7338 5.2555Z"
+                                    fill="#FFC850" />
+                            </svg>
+
+                            <div>
+                                <h2 class="text-main-color text-2xl lg:text-3xl font-extrabold">5.00</h2>
+                                <p class="text-p-color text-xs lg:text-base font-semibold">Trust Pilot Ratings</p>
+                            </div>
+                        </div>
+                        <!-- rating end -->
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- banner end -->
+
+    <main class="container mx-auto">
+        <!-- feature start -->
+        <section class="my-24">
+            <div>
+                <h1 class="text-center text-main-color text-5xl font-extrabold">Our Featured Products</h1>
+                <p class="text-p-color text-center text-base font-medium mt-5 mx-1  lg:max-w-4xl lg:mx-auto	">There are
+                    many
+                    variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
+                    form, by injected humour, or randomized words which don't look even slightly believable. </p>
+            </div>
+
+            <!-- feature tea container -->
+            <div class=" grid grid-cols-1  my-12 md:grid-cols-2 lg:grid-cols-4">
+
+                <!-- card-1 start -->
+                <div class="card w-80 mx-14  bg-gradient-to-t from-[#ffffff] to-[#eeeeee] ">
+                    <figure><img src="images/tea-1.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title pl-14">Milk Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- card-1 end -->
+
+                <!-- card-2 start -->
+                <div class="card w-80 mx-14  bg-gradient-to-t from-[#ffffff] to-[#eeeeee] ">
+                    <figure><img src="images/tea-2.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title pl-14">Black Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- card-2 end -->
+
+                <!-- card-3 start -->
+                <div class="card w-80 mx-14  bg-gradient-to-t from-[#ffffff] to-[#eeeeee] ">
+                    <figure><img src="images/tea-3.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title pl-14">Lemon Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- card-3 end -->
+
+                <!-- card-4 start -->
+                <div class="card w-80 mx-14  bg-gradient-to-t from-[#ffffff] to-[#eeeeee] ">
+                    <figure><img src="images/tea-4.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title pl-14">Green Tea</h2>
+                        <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- card-4 end -->
+
+            </div>
+        </section>
+        <!-- feature end -->
+
+
+        <!-- fresh start -->
+        <section class="lg:my-14">
+            <div class="flex gap-12 flex-col lg:flex-row rounded-xl">
+                <div class="pl-12  grid gap-8 grid-cols-2 mr-10 -mt-6 md:grid-cols-2 lg:grid-cols-2 flex-1">
+
+                    <div class="rounded-xl bg-gradient-to-r from-red-100 to-amber-100  h-36"></div>
+
+
+                    <div class="row-span-2 bg-[#E6A6231A] px-8 py-12 flex justify-center items-center rounded-xl">
+                        <img src="images/fresh-1.png" alt="">
+                    </div>
+
+
+                    <div class="row-span-2 bg-[#5776391A] px-8 py-12 flex justify-center items-center rounded-xl">
+                        <img src="images/fresh-2.png" alt="">
+                    </div>
+
+                    <div class="rounded-xl bg-gradient-to-r from-gray-300 to-white  h-36"></div>
+
+                </div>
+
+                <div class="flex-1 px-1">
+                    <h1 class="text-main-color text-5xl font-extrabold ">Great Tea, Freshly <br> Presented</h1>
+                    <p class="text-p-color text-base font-medium mt-5">The meaning of gong cha is chinese is to provide
+                        the best tea to emperor from all possessions.It represents the highest quality and self
+                        expectation. Establishing in 2006, Gong cha had been
+                        deeply appreciated by its customers because of good words of mouth and unique customized service
+                        originated from Taiwan.</p>
+
+                    <h1 class="text-main-color text-xl font-extrabold mt-5">Unique Taste</h1>
+                    <p class="text-p-color text-base font-medium mt-5">A Unique and different style from other teapots
+                        gives a <br>
+                        luxurious and minimalist impression</p>
+
+                    <h1 class="text-main-color text-xl font-extrabold mt-5">Premium Quality</h1>
+                    <p class="text-p-color text-base font-medium mt-5">Premium Quality that makes tea more elegant and
+                        more <br>durable when you use it.</p>
+                </div>
+
+            </div>
+        </section>
+        <!-- fresh end -->
+
+        <!-- client start -->
+<section class=" my-14 lg:my-24 mx-4 lg:mx-11 px-2  lg:px-16 py-10 lg:py-24 gap-12 flex flex-col items-center lg:flex-row rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] ">
+    
+        <div class="space-y-10">
+        <h1 class="text-[#F4F4F4] text-5xl font-extrabold -mt-4  -mb-3 lg:mb-5">Meet Our Super <br>Clients</h1>
+        <p class="text-[#F4F4F4] text-base font-medium  lg:mb-7 lg:mr-80">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized words which don't look even slightly believable. 
+        </p>
+        <button class="btn px-7 py-4 bg-white text-[#FF8938] font-bold capitalize  ">Show All</button>
+    </div>
+    <div class="relative px-5 ">
+
+
+         <!-- review start -->
+    <div class="bg-white opacity-40 rounded-lg p-10 relative mb-16 z-10 ">
+        
+        <img class="absolute -top-6 -left-5 w-16 border-4 bg-white border-white rounded-full " src="images/client.png" alt="">
+        <h2 class="text-[#777] text-base mb-5 max-w-xl">We are providing the best and suitable home insurance services for the people who are interested to treatment</h2>
+        <h1 class="text-main-color text-base font-bold">Ilham Yuda</h1>
+        <h4 class="text-[#5D5A6F] text-base font-medium">Businessman</h4>
+        <div class="flex justify-end">
+            <img src="images/circles.png" alt="">
+        </div>
+    </div>
+    <!-- review end -->
+
+
+    <!-- review start -->
+    <div class="bg-white rounded-lg p-10 absolute top-40 right-10  lg:right-20 lg:w-[430px] z-20">
+        
+        <img class="absolute -top-6 -left-5 w-16 border-4 bg-white border-white rounded-full " src="images/client.png" alt="">
+        <h2 class="text-[#777] text-base mb-5 max-w-xl">We are providing the best and suitable home insurance services for the people who are interested to treatment</h2>
+        <h1 class="text-main-color text-base font-bold">Ilham Yuda</h1>
+        <h4 class="text-[#5D5A6F] text-base font-medium">Businessman</h4>
+        <div class="flex justify-end">
+            <img src="images/circles.png" alt="">
+        </div>
+    </div>
+    <!-- review end -->
+
+     <!-- review start -->
+     <div class="bg-white opacity-40 rounded-lg p-10 relative z-10  ">
+        
+        <img class="absolute -top-6 -left-5 w-16 border-4 bg-white border-white rounded-full " src="images/client.png" alt="">
+        <h2 class="text-[#777] text-base mb-5 max-w-xl">We are providing the best and suitable home insurance services for the people who are interested to treatment</h2>
+        <h1 class="text-main-color text-base font-bold">Ilham Yuda</h1>
+        <h4 class="text-[#5D5A6F] text-base font-medium">Businessman</h4>
+        <div class="flex justify-end">
+            <img src="images/circles.png" alt="">
+        </div>
+    </div>
+    <!-- review end -->
+</div>
+</section>
+        <!-- client-end -->
+
+        <!-- card start -->
+<section class="my-24">
+    <div>
+        <h1 class="text-main-color text-center text-5xl font-extrabold -mt-4  -mb-3 lg:mb-5">News & Events</h1>
+        <p class="text-p-color text-center text-base font-medium mt-10 mx-3 lg:mb-7 ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, <br> by injected humour, or randomised words which don't look even slightly believable. </p>
+    </div>
+
+    <!-- card container -->
+    <div class="grid griid cols-1 lg:grid-cols-3 gap-10 mt-14 mx-4 ">
+        <!-- first card -->
+        <div class="card w-auto bg-base-100 border-2 shadow-xl">
+            <figure class=" px-5 pt-5">
+              <img class="w-full" src="images/news-1.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-2">
+              <h2 class="card-title text-p-color text-base font-medium ">Feb 05, 2027</h2>
+              <h1 class="text-main-color text-xl font-extrabold">Collecting 8 points for discount</h1>
+              <p class="text-p-color text-base font-medium">There are many variations of passages of Lorem Ipsum available.</p>
+              <h4 class="text-main-color text-base font-bold ">Learn More</h4>
+            </div>
+          </div>
+
+           <!-- second card -->
+        <div class="card w-auto bg-base-100 border-2 shadow-xl">
+            <figure class="px-5 pt-5">
+              <img class="w-full" src="images/news-2.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-2 ">
+              <h2 class="card-title text-p-color text-base font-medium ">Feb 05, 2027</h2>
+              <h1 class="text-main-color text-xl font-extrabold">Collecting 8 points for discount</h1>
+              <p class="text-p-color text-base font-medium">There are many variations of passages of Lorem Ipsum available.</p>
+              <h4 class="text-main-color text-base font-bold ">Learn More</h4>
+            </div>
+          </div>
+
+           <!-- third card -->
+        <div class="card w-auto bg-base-100 border-2 shadow-xl">
+            <figure class="px-5 pt-5">
+              <img class="w-full" src="images/news-3.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-2 ">
+              <h2 class="card-title text-p-color text-base font-medium ">Feb 05, 2027</h2>
+              <h1 class="text-main-color text-xl font-extrabold">Collecting 8 points for discount</h1>
+              <p class="text-p-color text-base font-medium">There are many variations of passages of Lorem Ipsum available.</p>
+              <h4 class="text-main-color text-base font-bold ">Learn More</h4>
+            </div>
+          </div>
+
+    </div>
+</section>
+        <!-- card end -->
+    </main>
+
+    <!-- footer start -->
+    <footer class=" px-4 py-2  lg:px-60 lg:py-10  bg-gradient-to-r from-orange-50 to-red-100 text-base-content" >
+        <div class="flex justify-between my-10 lg:my-24">
+            
+            <img src="images/cup.png" alt="">
+            <p class="flex items-center  lg:space-x-8">
+                <span class="ml-3">Ready to get started?</span>
+                <button class="btn bg-linear  bg-gradient-to-r from-amber-500 to-red-500 text-white text-base">Get Started</button>
+            </p>
+        </div>
+      <div class="footer">
+        <div class="space-y-3">
+            <span class="text-[#1C1C1C] text-xl font-semibold">Quick Links</span> 
+            <a class="text-[#494949] text-base font-normal">Home</a> 
+            <a class="text-[#494949] text-base font-normal">About Us</a> 
+            <a class="text-[#494949] text-base font-normal">Insurance</a> 
+            <a class="text-[#494949] text-base font-normal">Privacy Policy</a>
+          </div> 
+          <div class="space-y-3">
+            <span class=" text-main-color text-xl font-semibold">Our Service</span> 
+            <a class="text-[#494949] text-base font-normal">Life Insurance</a> 
+            <a class="text-[#494949] text-base font-normal">Car Insurance</a> 
+            <a class="text-[#494949] text-base font-normal">Health Insurance</a> 
+            <a class="text-[#494949] text-base font-normal">House Insurance</a>
+          </div> 
+          <div class="space-y-3">
+            <span class=" text-main-color text-xl font-semibold">Help</span> 
+            <a class="text-[#494949] text-base font-normal">FAQs</a> 
+            <a class="text-[#494949] text-base font-normal">Contact Us</a> 
+          </div> 
+            <span class=" lg:mb-5  text-2xl font-semibold leading-10 text-main-color">Subscribe to our <br> newsletter</span> 
+            <div class="form-control w-80">
+              <label class="label">
+                <span class="label-text">Email address</span>
+              </label> 
+              <div class="relative">
+                <input type="text"  class="lg:py-2 bg-transparent outline-none border-b-2 border-black " /> 
+                <button class="btn bg-gradient-to-r from-amber-500 to-red-500 absolute top-0 -right-16 lg:right-30 rounded-full">
+                    <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.91406 3.92432L12.1315 9.14171L6.91406 14.3591" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                </button>
+                <div class="flex space-x-4 mt-8">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 13.6411H16.5L17.5 9.64111H14V7.64111C14 6.61111 14 5.64111 16 5.64111H17.5V2.28111C17.174 2.23811 15.943 2.14111 14.643 2.14111C11.928 2.14111 10 3.79811 10 6.84111V9.64111H7V13.6411H10V22.1411H14V13.6411Z" fill="#494949"/>
+                        </svg>
+                        
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.1623 5.79802C21.3989 6.13571 20.5893 6.35749 19.7603 6.45602C20.634 5.93345 21.288 5.11103 21.6003 4.14202C20.7803 4.63002 19.8813 4.97202 18.9443 5.15702C18.3149 4.4836 17.4807 4.03698 16.5713 3.8866C15.6618 3.73622 14.7282 3.89051 13.9156 4.32547C13.1029 4.76043 12.4567 5.4517 12.0774 6.29181C11.6981 7.13192 11.607 8.0738 11.8183 8.97102C10.1554 8.88767 8.52863 8.45554 7.04358 7.70268C5.55854 6.94982 4.24842 5.89306 3.1983 4.60102C2.82659 5.23947 2.63125 5.96524 2.6323 6.70402C2.6323 8.15402 3.3703 9.43502 4.4923 10.185C3.82831 10.1641 3.17893 9.9848 2.5983 9.66202V9.71402C2.5985 10.6797 2.93267 11.6156 3.54414 12.3631C4.15562 13.1105 5.00678 13.6235 5.9533 13.815C5.33691 13.9821 4.6906 14.0067 4.0633 13.887C4.33016 14.7183 4.8503 15.4452 5.55089 15.9661C6.25147 16.487 7.09742 16.7758 7.9703 16.792C7.10278 17.4733 6.10947 17.977 5.04718 18.2742C3.98488 18.5714 2.87442 18.6563 1.7793 18.524C3.69099 19.7534 5.91639 20.4061 8.1893 20.404C15.8823 20.404 20.0893 14.031 20.0893 8.50402C20.0893 8.32402 20.0843 8.14202 20.0763 7.96402C20.8952 7.37218 21.6019 6.63904 22.1633 5.79902L22.1623 5.79802Z" fill="#494949"/>
+                        </svg>
+                        
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.14111C14.717 2.14111 15.056 2.15111 16.122 2.20111C17.187 2.25111 17.912 2.41811 18.55 2.66611C19.21 2.92011 19.766 3.26411 20.322 3.81911C20.8305 4.31901 21.224 4.9237 21.475 5.59111C21.722 6.22811 21.89 6.95411 21.94 8.01911C21.987 9.08511 22 9.42411 22 12.1411C22 14.8581 21.99 15.1971 21.94 16.2631C21.89 17.3281 21.722 18.0531 21.475 18.6911C21.2247 19.3589 20.8311 19.9637 20.322 20.4631C19.822 20.9714 19.2173 21.3649 18.55 21.6161C17.913 21.8631 17.187 22.0311 16.122 22.0811C15.056 22.1281 14.717 22.1411 12 22.1411C9.283 22.1411 8.944 22.1311 7.878 22.0811C6.813 22.0311 6.088 21.8631 5.45 21.6161C4.78233 21.3656 4.17753 20.9721 3.678 20.4631C3.16941 19.9633 2.77593 19.3586 2.525 18.6911C2.277 18.0541 2.11 17.3281 2.06 16.2631C2.013 15.1971 2 14.8581 2 12.1411C2 9.42411 2.01 9.08511 2.06 8.01911C2.11 6.95311 2.277 6.22911 2.525 5.59111C2.77524 4.92329 3.1688 4.31843 3.678 3.81911C4.17767 3.31034 4.78243 2.91684 5.45 2.66611C6.088 2.41811 6.812 2.25111 7.878 2.20111C8.944 2.15411 9.283 2.14111 12 2.14111ZM12 7.14111C10.6739 7.14111 9.40215 7.6679 8.46447 8.60558C7.52678 9.54326 7 10.815 7 12.1411C7 13.4672 7.52678 14.739 8.46447 15.6766C9.40215 16.6143 10.6739 17.1411 12 17.1411C13.3261 17.1411 14.5979 16.6143 15.5355 15.6766C16.4732 14.739 17 13.4672 17 12.1411C17 10.815 16.4732 9.54326 15.5355 8.60558C14.5979 7.6679 13.3261 7.14111 12 7.14111ZM18.5 6.89111C18.5 6.55959 18.3683 6.24165 18.1339 6.00723C17.8995 5.77281 17.5815 5.64111 17.25 5.64111C16.9185 5.64111 16.6005 5.77281 16.3661 6.00723C16.1317 6.24165 16 6.55959 16 6.89111C16 7.22263 16.1317 7.54058 16.3661 7.775C16.6005 8.00942 16.9185 8.14111 17.25 8.14111C17.5815 8.14111 17.8995 8.00942 18.1339 7.775C18.3683 7.54058 18.5 7.22263 18.5 6.89111ZM12 9.14111C12.7956 9.14111 13.5587 9.45718 14.1213 10.0198C14.6839 10.5824 15 11.3455 15 12.1411C15 12.9368 14.6839 13.6998 14.1213 14.2624C13.5587 14.825 12.7956 15.1411 12 15.1411C11.2044 15.1411 10.4413 14.825 9.87868 14.2624C9.31607 13.6998 9 12.9368 9 12.1411C9 11.3455 9.31607 10.5824 9.87868 10.0198C10.4413 9.45718 11.2044 9.14111 12 9.14111Z" fill="#494949"/>
+                        </svg>
+                        
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+      
+      <div class=" mt-16 mb-5 lg:mt-28 text-center lg:mb-20">
+        <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+      </div>
+      </footer>
+    <!-- footer end -->
+</body>
+
+</html>
